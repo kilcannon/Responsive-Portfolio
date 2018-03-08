@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;  
+    padding: 0;
+    margin: 0;
+    font-family: 'Georgia', Times, Times New Roman, serif !important;
+    font-size: 16px;
+    line-height: 150%;f
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -80px; 
+}
+
+footer, .push {
+    background-color: cadetblue;
+    height: 80px;
+}
+
+footer {
+  bottom: 0;
+  background-color: cadetblue !important;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    padding: 0px; /*removes spacing for better hover link coloration */
+    margin-top: 12px;  /*moves links downward for better spacing from top of page */
+    list-style: none;  /* makes list without bullets, numbers, auto spacing */
+    font-size: 12px;
+    float: right;
+    text-align: center;
+}
+
+ nav li a {
+    display: block;
+    font-color: black;
+    margin-right: 0px;   /* space between links */
+    width: auto;  
+    padding: 6px;
+    font-weight: bold;
+    line-height: 2px;
+    border-right: 1px solid lightgrey;  /* defines where and how the vertical lines between each link appear */
+}
+
+/* remove from last item */
+nav li:last-child a {
+    border: none;
+}
+
+/* float clearing */
+nav:after {
+     content: '';
+     clear:right;
+     display:block;
+}
+
+.navbar-inverse {
+  color: white;
+  font-size: 12px;
+  width: auto;
+}
+
+.panel-primary>.panel-heading {
+    color:  white;
+    background-color: white;
+    border-color: white;
+}
+
+.panel {
+  border: 0;
+}
+
+h2 {
+  color: cadetblue;
+  font: bold;
+}
+
+h3 {
+  color: cadetblue;
+  font: bold;
+}
+
+#body-break { 
+    border: 0;
+    height: 0;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    padding:left 5px;
+}
+
+.wrapper {
+  background-image: url(https://github.com/kilcannon/Basic-Portfolio/blob/master/assets/images/spiration_dark.png?raw=true);
+}
+
+.row {
+  margin: 20px;
+}
+
+.navbar-default {
+  background-color: white;
+  border-color: white;
+}
+
+.navbar-text {
+  color: white !important;
+  background-color: cadetblue;
+  font-size: 24px;
+  padding: 15px;
+}
+
+#bio-image {
+  margin-right: 5px;
+}
+
+/*creates the sizing requirements to fit all necessary fields with proper spacing*/
+#contact-form {
+  background-color: white;
+  width: 610px;
+  padding-right: 25px;
+  padding-left: 15px;
+  padding-bottom: 25px;
+  padding-top: 10px;
+  margin-right: 25px;
+  margin-top: 25px;
+  float: left;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    margin-bottom: 15px; 
+    resize: vertical /* Allow the user to vertically resize the textarea */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: cadetblue;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+}
+
+/* Hover color darkening on submit button*/
+input[type=submit]:hover {
+    background-color: teal;
+}
+
+.portfolio-bucket {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  float: left;
+}
+
+/*creates a fixed position div that labels the picture it rests upon*/
+.portfolio-image-overlay {
+  position: absolute;
+  top: 180px;
+  width: 250px;
+  background-color: cadetblue;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+/*Media query impelementation*/
+@media screen and (max-width: 980px) {
+  .container {
+    width: 748px;
+  }
+  .main-content {
+    width: 440px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 620px;
+  }
+  .main-content {
+    width: 100%;
+  }
+  .sidebar {
+    width: 100%;
+    margin-top: 20px;
+  }
+ 
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    width: 100%;
+  }
+  .main-content {
+    margin-left: 10px;
+    width: 95%;
+  }
+  .sidebar {
+    float: left;
+    margin: 20px auto 0 10px;
+    width: 95%;
+  }
+  #brand {
+    width: 100%;
+    text-align: center;
+  }
+  .navigation {
+    width: 100%;
+    padding-top: 10px;
+  }
+  .navigation-links {
+    width: 33.33%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+}
