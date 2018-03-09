@@ -124,7 +124,7 @@ h3 {
 /*creates the sizing requirements to fit all necessary fields with proper spacing*/
 #contact-form {
   background-color: white;
-  width: 610px;
+  width: 90%px;
   padding-right: 25px;
   padding-left: 15px;
   padding-bottom: 25px;
